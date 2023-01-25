@@ -1,17 +1,35 @@
+import styles from './Card.module.css'
 export default function Card({
-    degree = "none",
-    colour = "purple",
+    colour = "bisque",
     font = "0",
-    image = "icon/personTwo.png"
+    fontColour = "brown",
+    image = "icon/cat.png",
+    city = "Ontario",
+    name = "none"
 }) {
     return (
-        <div style={{ backgroundColor: colour, fontSize: font }}>
+        <div style={{
+            backgroundColor: colour,
+            fontSize: font,
+            color: fontColour,
+            width: "420px",
+            padding: "32px",
+            margin: "20px",
+            fontWeight: "bold",
+            border: "4px solid",
+            display: "flex",
+            alignItems: "center",
+            borderRadius: "1000px",
+        }}>
             {
-                colour === "red" ? <img src={'icon/person.png'} width='50' /> :
-                    colour === "blue" ? <img src={'icon/personThree.png'} width='50' /> :
-                        <img src={image} width='50' />
+                colour === "none" ? <img src={'icon/cat.png'} width='50' /> :
+                    colour === "none" ? <img src={'icon/cat.png'} width='50' /> :
+                        <img src={image} width='50' className={styles.image__area} />
             }
-            {degree}
-        </div>
+
+            {name}
+            {" is from " + city}
+
+        </div >
     )
 }

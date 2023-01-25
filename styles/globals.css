@@ -1,3 +1,7 @@
+:root {
+  --green: #4e7a5f;
+}
+
 html,
 body {
   padding: 0;
@@ -19,6 +23,7 @@ a {
   html {
     color-scheme: dark;
   }
+
   body {
     color: white;
     background: black;

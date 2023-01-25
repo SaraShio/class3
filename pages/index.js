@@ -1,10 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import data from '../data/education.json'
+import data from '../data/cats.json'
 import { useState } from 'react'
 import Card from '../components/Card/index.js'
 import Link from 'next/link'
+import Navbar from '../components/Navbar'
 
 
 
@@ -21,33 +22,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Navbar />
+
       <main className={styles.main}>
-        <Link href="about">About</Link>
-        {
-          information && information.map((info, index) => {
-            if (info.department.toLowerCase() === "business") {
+        <div className={styles.options}>
+          {
+            information && information.map((info, index) => {
               return (
-                <Card key={index} degree={info.degree} colour="red" font="10px" />
+                <Card
+                  key={index}
+                  name={info.catName}
+                  city={info.city}
+                  colour="bisque"
+                  font="42px"
+                />
               )
-
-            }
-
-
-          })
-        }
-        {
-          information && information.map((info, index) => {
-            if (info.department.toLowerCase() === "computing") {
-              return (
-                <Card key={index} degree={info.degree} colour="blue" font="50px" />
-              )
-
-            }
-
-
-          })
-        }
-
+            })
+          }
+        </div>
       </main>
     </>
   )

@@ -1,0 +1,32 @@
+[
+    {
+        "catName": "Tella ",
+        "age": 1.5,
+        "city": "Toronto",
+        "breed": "lilac point siamese"
+    },
+    {
+        "catName": "Blink ",
+        "age": 1.5,
+        "city": "Pickering",
+        "breed": "blue point siamese"
+    },
+    {
+        "catName": "Hallo ",
+        "age": 2,
+        "city": "Ajax",
+        "breed": "black siamese"
+    },
+    {
+        "catName": "Coco ",
+        "age": 3,
+        "city": "Missisaugua",
+        "breed": "fluffy siamese"
+    },
+    {
+        "catName": "Coco Jr.",
+        "age": 1,
+        "city": "Vaughn",
+        "breed": "gray point siamese"
+    }
+]

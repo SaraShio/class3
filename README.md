@@ -1,3 +1,19 @@
+## Cat Website
+
+For the user to view different cats online.
+
+## Website discription
+
+Page 1 = Homepage where you can read each cat's name and where they are from.
+Page 2 = About page where user can find out the bread and age of the cats.
+
+## How to use
+
+Click on the 'Home' and/or 'More Info' button to flip throughout the pages, these are the only two resonsive buttons. 
+
+
+## Which template was used
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
@@ -32,3 +48,7 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Credit
+
+Cat icon from [https://www.veryicon.com/icons/miscellaneous/taoist-music/cat-56.html]
